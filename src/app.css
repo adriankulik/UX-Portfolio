@@ -1,12 +1,12 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 body {
-    font-family: 'Manrope', sans-serif;
+	font-family: 'Manrope', sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 .nav-label {
-    font-family: 'Newsreader', serif;
+	font-family: 'Newsreader', serif;
 }

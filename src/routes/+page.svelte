@@ -14,7 +14,8 @@
 		<h1
 			class="text-6xl md:text-8xl font-extrabold tracking-tighter text-on-background mb-8 leading-[0.95]"
 		>
-			Passionate about <span class="italic font-body font-light text-primary">meaningful</span> experiences on the web.
+			Passionate about <span class="italic font-body font-light text-primary">meaningful</span> experiences
+			on the web.
 		</h1>
 	</div>
 </section>
@@ -22,15 +23,15 @@
 <section class="max-w-7xl mx-auto px-6 lg:px-12">
 	<div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
 		{#each projects as project (project)}
-<ProjectCard
-	title={project.title}
-	tagline={project.tagline}
-	imageUrl={project.imageUrl}
-	imageUrl2={project.imageUrl2}
-	imageUrl3={project.imageUrl3}
-	mainTech={project.tech[0]}
-	secondaryTech={project.tech.slice(1)}
-/>
+			<ProjectCard
+				title={project.title}
+				tagline={project.tagline}
+				imageUrl={project.imageUrl}
+				imageUrl2={project.imageUrl2}
+				imageUrl3={project.imageUrl3}
+				mainTech={project.tech[0]}
+				secondaryTech={project.tech.slice(1)}
+			/>
 		{/each}
 	</div>
 </section>

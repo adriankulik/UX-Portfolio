@@ -31,8 +31,9 @@
 </script>
 
 <div class={`h-full flex flex-col ${className}`}>
-	<div class="rounded-3xl overflow-hidden relative transition-all duration-500 hover:shadow-xl aspect-square bg-surface-container-low">
-
+	<div
+		class="rounded-3xl overflow-hidden relative transition-all duration-500 hover:shadow-xl aspect-square bg-surface-container-low"
+	>
 		{#if isSingle}
 			<div class="overflow-hidden w-full h-full">
 				<img
@@ -41,7 +42,6 @@
 					class="w-full h-full object-cover transition-transform duration-500 ease-out cursor-pointer"
 				/>
 			</div>
-
 		{:else if isTwo}
 			<div class="grid grid-cols-2 w-full h-full gap-1">
 				<div class="overflow-hidden">
@@ -60,7 +60,6 @@
 					/>
 				</div>
 			</div>
-
 		{:else if isMany}
 			<div class="grid grid-cols-2 grid-rows-2 gap-1 w-full h-full">
 				<div class="col-span-2 row-span-1 overflow-hidden">
@@ -89,17 +88,23 @@
 			</div>
 		{/if}
 
-		<div class="absolute inset-0 bg-gradient-to-t from-on-background/40 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500" />
+		<div
+			class="absolute inset-0 bg-gradient-to-t from-on-background/40 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500"
+		/>
 	</div>
 
 	<div class="mt-6 pl-2 flex-1 flex flex-col">
 		<div class="flex gap-2 mb-3 flex-wrap">
-			<span class="bg-surface-container-high px-3 py-1 rounded-full text-xs uppercase tracking-widest text-on-surface-variant">
+			<span
+				class="bg-surface-container-high px-3 py-1 rounded-full text-xs uppercase tracking-widest text-on-surface-variant"
+			>
 				{mainTech}
 			</span>
 
 			{#each secondaryTech as tech (tech)}
-				<span class="bg-surface-container-high px-3 py-1 rounded-full text-xs uppercase tracking-widest text-on-surface-variant">
+				<span
+					class="bg-surface-container-high px-3 py-1 rounded-full text-xs uppercase tracking-widest text-on-surface-variant"
+				>
 					{tech}
 				</span>
 			{/each}
